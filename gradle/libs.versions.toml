@@ -25,6 +25,8 @@ androidGradlePlugin = "8.0.2"
 androidLibraryPlugin = "8.0.2"
 secrets = "2.0.1"
 kotlinKsp = "1.9.10-1.0.13"
+appcompat = "1.6.1"
+material = "1.12.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -79,6 +81,8 @@ networkComposeLibs = ["retrofit", "retrofit-converter-moshi", "moshi-kotlin",
     "moshi-core", "okhttp3-okhttp", "okhttp3-loggin-interceptor"
 ]
 googleAccompanistLibs = ["accompanist-system-uicontroller", "accompanist-permissions"]
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -87,3 +91,5 @@ android-library = { id = "com.android.library", version.ref = "androidLibraryPlu
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlinKsp" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+
