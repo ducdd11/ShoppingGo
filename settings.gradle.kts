@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -23,6 +24,13 @@ rootProject.name = "ShoppingGo"
 include(":app")
 include(":core-network")
 include(":core-localstorage")
+include(":core-data")
+include(":core-model")
+include(":core-common")
+include(":core-theme")
+include(":core-designSystem")
+include(":core-navigation")
+ 
 include(":core-common")
 include(":core-model")
 include(":core-theme")
